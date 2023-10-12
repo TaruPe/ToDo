@@ -21,6 +21,7 @@ export default function App() {
     const newKey = String(todos.length)
     const object = {key: newKey, description: newTodo}
     const newTodos = [...todos, object]
+    storeData(newTodos) // Save the added text
     setTodos(newTodos) // Saves the updated task list
     setNewTodo('')
   }
